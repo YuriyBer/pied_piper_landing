@@ -1,0 +1,291 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    position: fixed;
+    background: #007765;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 84px;
+    z-index: 1;
+}
+
+.logo {
+    position: relative;
+}
+
+.logo1 {
+    position: absolute;
+    height: 45px;
+}
+
+.logo2 {
+    height: 45px;
+}
+
+.dropdown-content {
+    display: flex;
+    gap: 3px;
+    background-color: white;
+    justify-content: right;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    list-style: none;
+    padding: 0;
+}
+
+.dropbtn {
+    background-color: #007765;
+    border: none;
+    padding: 0;
+    position: relative;
+}
+
+.dropdown__link {
+    display: block;
+    color: white;
+    text-decoration: none;
+    background-color: #007765;
+    padding: 0px 8px;
+    margin: -1px;
+}
+
+:target {
+    border-top: 84px solid transparent;
+    margin-top: -84px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+
+.rectangle {
+    height: 84px;
+}
+
+.jumbotron {
+    background-image: url("../img/image.png");
+    background-position: center center;
+    background-size: cover;
+    padding-top: 160px;
+    padding-bottom: 160px;
+    /* top: -84px; */
+}
+
+.jumbo {
+    font-size: 72px;
+    color: white;
+    text-align: center;
+    line-height: 84px;
+}
+
+.problem {
+    padding-top: 48px;
+    background-color: #eeeeee;
+}
+
+.theproblem {
+    text-align: center;
+    font-size: 64px;
+    line-height: 75px;
+    color: #007765;
+    font-weight: 500;
+    margin-top: 48px;
+    margin-bottom: 16px;
+}
+
+.tprob {
+    font-size: 32px;
+    padding-bottom: 92px;
+}
+
+.container {
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 55px;
+    padding-right: 55px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    background-image: url("../img/image2.png");
+    background-size: cover;
+    background-position: center center;
+    height: 483px;
+}
+
+.hero__message {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    color: #fff;
+}
+
+.ppchead {
+    padding-top: 48px;
+    text-align: center;
+    font-size: 64px;
+    color: #007765;
+    font-weight: 500;
+    margin-top: 48px;
+    margin-bottom: 16px;
+}
+
+.ppclogo {
+    float: left;
+    margin-right: 48px;
+}
+
+.ppcnew {
+    margin-bottom: 40px;
+}
+
+.ppc__paragraph {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 32px;
+    line-height: 37.5px;
+}
+
+.ppcnow {
+    margin-bottom: 92px;
+}
+
+.theteam {
+    background-color: #eeeeee;
+    padding-top: 48px;
+    padding-bottom: 64px;
+}
+
+.ttheader {
+    text-align: center;
+    font-size: 64px;
+    color: #007765;
+    font-weight: 500;
+    margin-bottom: 56px;
+}
+
+.teamphoto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.photo {
+    /* display: inline-block; */
+    width: 350px;
+    height: 283px;
+    padding-bottom: 26px;
+}
+
+.photo__img {
+    display: block;
+    margin: 24px auto 12px auto;
+    width: 168px;
+    height: 168px;
+}
+
+.name {
+    text-align: center;
+    font-size: 24px;
+    line-height: 28px;
+    color: #007765;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.position {
+    text-align: center;
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: 21px;
+}
+
+.clear {
+    clear: both;
+}
+
+footer {
+    background: #333333;
+}
+
+.copyrights {
+    font-size: 18px;
+    padding-top: 50px;
+    padding-bottom: 64px;
+    line-height: 21px;
+    max-width: 540px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 767px) {
+    .dropbtn {
+        width: 24px;
+        height: 24px;
+    }
+    .hamburger-menu__btn-line {
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        content: '';
+    }
+    .burger-first {
+        top: 2px;
+    }
+    .burger-last {
+        bottom: 0;
+    }
+    .cross-first {
+        transform: rotate(45deg);
+        top: 12px;
+    }
+    .cross-last {
+        transform: rotate(-45deg);
+        top: 12px;
+    }
+    .dropdown-content {
+        visibility: hidden;
+        position: absolute;
+        flex-direction: column;
+        right: 2px;
+        padding: 2px;
+        margin-top: 8px;
+    }
+    .show {
+        visibility: visible;
+    }
+    .dropdown__link {
+        padding: 8px;
+    }
+    .jumbo {
+        font-size: 36px;
+    }
+    .theproblem {
+        font-size: 32px;
+    }
+    .tprob {
+        font-size: 16px;
+    }
+    .hero__message {
+        font-size: 24px;
+    }
+    .ppchead {
+        font-size: 32px;
+    }
+    .ppc__paragraph {
+        font-size: 16px;
+    }
+}
